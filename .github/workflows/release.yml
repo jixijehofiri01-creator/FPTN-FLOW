@@ -1,0 +1,129 @@
+name: Build & Publish Multi-ABI Releases
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Release version tag (e.g. v0.1)'
+        required: true
+        default: 'v0.1'
+
+permissions:
+  contents: write
+
+jobs:
+  build-apks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Accept Android SDK licenses
+        run: |
+          if [ -n "$ANDROID_HOME" ] && [ -x "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" ]; then
+            yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null 2>&1 || true
+          fi
+
+      - name: Set up Gradle 9.3.1
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.3.1'
+
+      - name: Determine release version
+        id: version
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            TAG="${{ github.event.inputs.tag_name }}"
+          else
+            TAG="${GITHUB_REF_NAME}"
+          fi
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare signing keystore
+        id: signing
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 --decode > "${GITHUB_WORKSPACE}/my-upload-key.jks"
+            echo "signed_release=true" >> "$GITHUB_OUTPUT"
+          else
+            keytool -genkeypair -v \
+              -keystore "${GITHUB_WORKSPACE}/debug.keystore" \
+              -storepass android -keypass android \
+              -alias androiddebugkey \
+              -dname "CN=FPTN Flow,OU=OpenSource,O=FPTN Flow,L=Unknown,S=Unknown,C=US" \
+              -keyalg RSA -keysize 2048 -validity 10000
+            echo "signed_release=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run unit, security & UI Robolectric tests
+        run: gradle :app:testDebugUnitTest --no-daemon
+
+      - name: Build APKs for all ABIs (arm64-v8a, armeabi-v7a, x86_64, universal)
+        env:
+          KEYSTORE_PATH: ${{ github.workspace }}/my-upload-key.jks
+          STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          mkdir -p release-apks
+          TAG="${{ steps.version.outputs.tag }}"
+          if [ "${{ steps.signing.outputs.signed_release }}" = "true" ]; then
+            TASK=":app:assembleRelease"
+            OUT="app/build/outputs/apk/release/app-release.apk"
+          else
+            TASK=":app:assembleDebug"
+            OUT="app/build/outputs/apk/debug/app-debug.apk"
+          fi
+
+          for ABI in arm64-v8a armeabi-v7a x86_64; do
+            gradle $TASK -PtargetAbi=$ABI --no-daemon
+            cp "$OUT" "release-apks/FPTN-Flow-${TAG}-${ABI}.apk"
+          done
+
+          gradle $TASK --no-daemon
+          cp "$OUT" "release-apks/FPTN-Flow-${TAG}-universal.apk"
+
+          cd release-apks
+          sha256sum *.apk > SHA256SUMS.txt
+          ls -lh
+
+      - name: Upload APK build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: fptn-flow-apks-${{ steps.version.outputs.tag }}
+          path: release-apks/*
+
+      - name: Publish GitHub Release (Latest) with all APKs
+        if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: FPTN Flow ${{ steps.version.outputs.tag }}
+          draft: false
+          prerelease: false
+          make_latest: true
+          body: |
+            ### Скачать APK / Download APK
+
+            | Файл / File | Описание / Description |
+            | :--- | :--- |
+            | `FPTN-Flow-${{ steps.version.outputs.tag }}-arm64-v8a.apk` | **Рекомендуется** — современные 64-бит Android-смартфоны и планшеты (ARM64) / Modern 64-bit Android phones & tablets |
+            | `FPTN-Flow-${{ steps.version.outputs.tag }}-armeabi-v7a.apk` | Старые 32-бит Android-устройства (ARMv7) / Older 32-bit ARM Android devices |
+            | `FPTN-Flow-${{ steps.version.outputs.tag }}-x86_64.apk` | Устройства на Intel/AMD, Chromebook и эмуляторы / Intel/AMD tablets, Chromebooks & emulators |
+            | `FPTN-Flow-${{ steps.version.outputs.tag }}-universal.apk` | Универсальный APK для любого Android 7.0+ (все архитектуры) / Universal APK for any Android 7.0+ (all ABIs) |
+            | `SHA256SUMS.txt` | Контрольные суммы SHA-256 / SHA-256 checksums |
+          generate_release_notes: true
+          files: |
+            release-apks/*.apk
+            release-apks/SHA256SUMS.txt

@@ -1,0 +1,64 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+    <!-- Heraldic French Shield (Crimson with Gold Trim) -->
+    <path
+        android:fillColor="#C8102E"
+        android:strokeColor="#F4C430"
+        android:strokeWidth="2.8"
+        android:pathData="M24,18 L104,18 L104,74 C104,96 84,110 64,118 C44,110 24,96 24,74 Z" />
+    <!-- Imperial Top Central Crown -->
+    <path
+        android:fillColor="#FFD447"
+        android:strokeColor="#8F6308"
+        android:strokeWidth="1.2"
+        android:pathData="M56,30 C54,23 59,19 64,19 C69,19 74,23 72,30 L70,33 L58,33 Z" />
+    <path
+        android:fillColor="#FFD447"
+        android:pathData="M63,13 L65,13 L65,20 L63,20 Z M60,15 L68,15 L68,17 L60,17 Z" />
+    <!-- Two Small Crowns above Eagle Heads -->
+    <path
+        android:fillColor="#FFD447"
+        android:strokeColor="#8F6308"
+        android:strokeWidth="1"
+        android:pathData="M45,35 C44,30 47,28 50,28 C53,28 56,30 55,35 Z M73,35 C72,30 75,28 78,28 C81,28 84,30 83,35 Z" />
+    <!-- Golden Double-Headed Eagle Body, Feathered Wings & Tail -->
+    <path
+        android:fillColor="#F7C948"
+        android:strokeColor="#7A5207"
+        android:strokeWidth="1.3"
+        android:pathData="M64,45
+            C61,40 57,36 52,36 C47,36 44,39 43,43 L48,42 L45,46 C49,47 53,45 56,49
+            L51,51 L31,34 L34,44 L29,42 L34,51 L29,51 L36,59 L31,61 L40,67 L37,71 L47,73
+            L53,68 L53,82 L44,86 L46,90 L52,88 L50,94 L56,92 L58,86
+            L57,96 L60,104 L64,108 L68,104 L71,96
+            L70,86 L72,92 L78,94 L76,88 L82,90 L84,86 L75,82 L75,68
+            L81,73 L91,71 L88,67 L97,61 L92,59 L99,51 L94,51 L99,42 L94,44 L97,34 L77,51
+            L72,49 C75,45 79,47 83,46 L80,42 L85,43 C84,39 81,36 76,36 C71,36 67,40 64,45 Z" />
+    <!-- Scepter (left talon) & Orb (right talon) -->
+    <path
+        android:fillColor="#FFE066"
+        android:strokeColor="#7A5207"
+        android:strokeWidth="1"
+        android:pathData="M41,77 L44,77 L44,96 L41,96 Z M84,85 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+    <!-- Central Moscow Escutcheon (Crimson Shield with Silver Rider St. George) -->
+    <path
+        android:fillColor="#B81427"
+        android:strokeColor="#FFD447"
+        android:strokeWidth="1.6"
+        android:pathData="M53,55 L75,55 L75,72 C75,79 69,84 64,87 C59,84 53,79 53,72 Z" />
+    <!-- St. George Silver Horse & Rider Silhouette -->
+    <path
+        android:fillColor="#F5F7FA"
+        android:pathData="M61,60 C63,60 65,61 65,63 L69,65 L72,69 L68,72 L69,78 L66,78 L64,73 L60,74 L59,79 L56,79 L57,71 L55,68 L59,66 Z" />
+    <!-- Golden Spear & Blue Cloak Accent -->
+    <path
+        android:strokeColor="#FFD447"
+        android:strokeWidth="1.5"
+        android:pathData="M60,62 L71,79" />
+    <path
+        android:fillColor="#1A4FA0"
+        android:pathData="M57,61 C55,63 54,65 56,67 L60,65 Z" />
+</vector>

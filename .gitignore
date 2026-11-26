@@ -1,0 +1,36 @@
+# Gradle & Kotlin build caches
+.gradle/
+.kotlin/
+/build/
+app/build/
+.build-outputs/
+.externalNativeBuild/
+.cxx/
+/captures/
+
+# IDE & OS metadata
+*.iml
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+local.properties
+
+# Local secrets, signing keys & build outputs
+.env
+.env.local
+*.keystore
+*.keystore.base64
+*.jks
+*.p12
+*.pem
+*.key
+*.apk
+*.aab
+SHA256SUMS.txt
+releases/
+public/
+metadata.json

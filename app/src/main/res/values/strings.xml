@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">FPTN Flow</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_share">Share</string>
+
+    <!-- Connection States -->
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_connecting">Connecting…</string>
+    <string name="status_switching_server">Switching server…</string>
+    <string name="status_reconnecting">Reconnecting…</string>
+    <string name="status_connected">Protected</string>
+    <string name="status_disconnecting">Disconnecting…</string>
+    <string name="status_error">Connection error</string>
+
+    <!-- Pull-to-Connect Track -->
+    <string name="swipe_to_connect">Slide to connect</string>
+    <string name="swipe_release_now">Release to connect</string>
+    <string name="swipe_release_to_disconnect">Release to disconnect</string>
+    <string name="swipe_connected_hint">Tap or slide left</string>
+    <string name="swipe_connecting_cancel">Connecting… Tap to cancel</string>
+    <string name="swipe_disconnecting">Stopping tunnel…</string>
+    <string name="swipe_switching_server">Switching to %1$s…</string>
+    <string name="swipe_reconnecting_progress">Reconnecting (%1$d/%2$d)…</string>
+
+    <!-- Home Screen -->
+    <string name="home_no_tokens_title">No tokens added</string>
+    <string name="home_no_tokens_subtitle">Add an official fptnb: token or a self-hosted FPTN server token to start.</string>
+    <string name="home_add_token_action">Add token</string>
+    <string name="home_server_auto">Auto (lowest ping)</string>
+    <string name="home_server_selector_label">Server</string>
+    <string name="home_server_tap_to_switch">Tap to switch server</string>
+    <string name="home_select_server_placeholder">Select server</string>
+    <string name="home_select_server_cd">Select server</string>
+    <string name="home_ping_refresh">Refresh ping</string>
+    <string name="home_speed_download">Download</string>
+    <string name="home_speed_upload">Upload</string>
+    <string name="home_session_time">Session</string>
+    <string name="home_route_mode_vpn" translatable="false">VpnService</string>
+    <string name="home_route_mode_root" translatable="false">Root Stealth</string>
+    <string name="home_select_server_title">Select server</string>
+    <string name="home_censored_server_tag">Restricted</string>
+    <string name="home_error_auto_heal">Auto-fix</string>
+    <string name="home_error_logs">Logs</string>
+    <string name="home_error_dismiss">Dismiss</string>
+    <string name="home_perm_banner_title">Permissions needed</string>
+    <string name="home_perm_banner_desc">For stable background VPN, enable: %1$s.</string>
+    <string name="home_perm_notifications">Notifications</string>
+    <string name="home_perm_battery">Unrestricted battery</string>
+    <string name="home_perm_vpn">VPN profile</string>
+    <string name="home_perm_all">All permissions</string>
+    <string name="home_perm_reason_notifications">notifications</string>
+    <string name="home_perm_reason_battery">unrestricted background activity</string>
+    <string name="home_perm_reason_vpn">system VPN profile</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_vpn_active_banner">VPN is active. Changes are saved and applied smoothly to the tunnel.</string>
+    <string name="settings_section_connection">Connection and bypass</string>
+    <string name="settings_section_network">Network, DNS and routing</string>
+    <string name="settings_section_stability">Stability and appearance</string>
+    <string name="settings_section_system">System and diagnostics</string>
+    <string name="settings_tokens_title">Tokens and servers</string>
+    <string name="settings_tokens_subtitle">Profiles and server list</string>
+    <string name="settings_presets_title">Network presets</string>
+    <string name="settings_presets_count">%1$d presets</string>
+    <string name="settings_presets_auto_suffix">Auto Wi-Fi/Mobile</string>
+    <string name="settings_overrides_title">Manual overrides</string>
+    <string name="settings_overrides_active">Locked manually: %1$d • Reset to auto</string>
+    <string name="settings_overrides_auto">All parameters managed automatically</string>
+    <string name="settings_bypass_title">Bypass and SNI</string>
+    <string name="settings_dns_title">DNS and Smart DNS</string>
+    <string name="settings_dns_auto">Auto (FPTN server)</string>
+    <string name="settings_dns_adguard">AdGuard DoH (Ad block)</string>
+    <string name="settings_tunneling_title">Routing and apps</string>
+    <string name="settings_domains_count">%1$d domains</string>
+    <string name="settings_root_title">Root Stealth (fptn0)</string>
+    <string name="settings_root_subtitle">Hidden kernel TUN without VPN icon</string>
+    <string name="settings_root_active_subtitle">Active • Hidden fptn0 interface</string>
+    <string name="settings_restore_root_title">Check Root access</string>
+    <string name="settings_restore_root_subtitle">Tap after granting su in Magisk or KernelSU</string>
+    <string name="settings_additional_title">Stability and timeouts</string>
+    <string name="settings_watchdog_on_summary">Watchdog %1$ds/%2$ds • Ping %3$ds</string>
+    <string name="settings_watchdog_off_summary">Watchdog off • Ping %1$ds</string>
+    <string name="settings_appearance_title">Appearance and haptics</string>
+    <string name="settings_appearance_haptics_on">Haptics</string>
+    <string name="settings_appearance_haptics_off">No haptics</string>
+    <string name="settings_appearance_wave_on">Wave shader</string>
+    <string name="settings_appearance_wave_off">No wave</string>
+    <string name="settings_permissions_title">Permissions</string>
+    <string name="settings_permissions_subtitle">VPN, notifications, battery and Root</string>
+    <string name="settings_logs_title">Logs and diagnostics</string>
+    <string name="settings_logs_subtitle">Tunnel, routing and Root events</string>
+    <string name="settings_backup_title">Backup</string>
+    <string name="settings_backup_subtitle">Export and import settings or tokens</string>
+    <string name="settings_updates_title">Updates (v%1$s)</string>
+    <string name="settings_updates_idle_subtitle">Check GitHub Releases for new versions</string>
+    <string name="settings_updates_checking_subtitle">Checking GitHub Releases…</string>
+    <string name="settings_updates_up_to_date_subtitle">You are on the latest version</string>
+    <string name="settings_updates_available_subtitle">New version v%1$s available — tap to download</string>
+    <string name="settings_updates_no_releases_subtitle">No releases published on GitHub yet</string>
+    <string name="settings_updates_error_subtitle">Could not check updates — tap to retry</string>
+    <string name="settings_updates_dialog_title">Update available: v%1$s</string>
+    <string name="settings_updates_dialog_current">Installed: v%1$s → Latest: v%2$s</string>
+    <string name="settings_updates_download_abi">Download APK (%1$s)</string>
+    <string name="settings_updates_open_releases">Open GitHub Releases</string>
+    <string name="settings_updates_banner_title">FPTN Flow v%1$s is available</string>
+    <string name="settings_updates_banner_subtitle">Tap to view release notes and download APK on GitHub</string>
+    <string name="settings_sponsors_title">Original FPTN credits</string>
+    <string name="settings_sponsors_count">Upstream protocol &amp; %1$d contributors</string>
+    <string name="settings_sponsors_refresh_cd">Refresh upstream FPTN info</string>
+    <string name="settings_sponsors_release">Upstream release: %1$s</string>
+    <string name="settings_exit_title">Exit</string>
+    <string name="settings_exit_subtitle">Stop tunnel, clean routes and close app</string>
+    <string name="settings_exit_dialog_title">Exit FPTN Flow?</string>
+    <string name="settings_exit_dialog_message">The tunnel will stop, the TUN interface will close, and all active routing and Root rules will be cleared.</string>
+    <string name="settings_exit_confirm">Exit</string>
+    <string name="settings_locked_cd">Locked while VPN is active</string>
+
+    <!-- Token Manager -->
+    <string name="tokens_add_card_title">Add token profile</string>
+    <string name="tokens_paste_button">Paste</string>
+    <string name="tokens_save_button">Save token</string>
+    <string name="tokens_saving_button">Saving…</string>
+    <string name="tokens_cancel_button">Cancel</string>
+    <string name="tokens_name_label">Profile name</string>
+    <string name="tokens_name_placeholder">Official FPTN or My VPS</string>
+    <string name="tokens_raw_label">Access token (fptnb:, fptn:, fptn:// or JSON)</string>
+    <string name="tokens_raw_placeholder">Paste access token…</string>
+    <string name="tokens_raw_support">Supports fptnb: (Brotli+Base64), fptn:, fptn://, multiline Base64, or JSON.</string>
+    <string name="tokens_saved_profiles_header">Saved profiles (%1$d)</string>
+    <string name="tokens_empty_title">No profiles yet</string>
+    <string name="tokens_empty_subtitle">Add one or more tokens. Their servers will appear with the [Profile] prefix.</string>
+    <string name="tokens_rename_dialog_title">Rename profile</string>
+    <string name="tokens_save_short">Save</string>
+    <string name="tokens_delete_dialog_title">Delete profile “%1$s”?</string>
+    <string name="tokens_delete_dialog_message">All %1$d associated servers will be removed from the list.</string>
+    <string name="tokens_delete_confirm">Delete</string>
+    <string name="tokens_profile_meta">%1$s • %2$d servers • %3$s</string>
+    <string name="tokens_delete_cd">Delete token profile</string>
+    <string name="tokens_rename_cd">Rename token profile</string>
+
+    <!-- Share Screen -->
+    <string name="share_title">Share FPTN Flow</string>
+    <string name="share_fork_badge">Reworked Material 3 client for FPTN</string>
+    <string name="share_fork_notice">FPTN Flow is a personal, reworked Android client built on top of the open-source FPTN protocol and native core. Below you will find this project on GitHub along with the original FPTN links.</string>
+    <string name="share_subtitle">Personal reworked Android VPN client for the open-source FPTN protocol</string>
+    <string name="share_fork_github_repo">FPTN Flow on GitHub</string>
+    <string name="share_fork_releases">Releases &amp; APK downloads</string>
+    <string name="share_official_site">Original FPTN website (fptn.org)</string>
+    <string name="share_github_repo">Original FPTN on GitHub</string>
+    <string name="share_telegram_bot">Get access token in @fptn_bot</string>
+    <string name="share_copy_link">Copy link</string>
+    <string name="share_system_share">Share</string>
+    <string name="share_qr_caption">Scan QR code to open FPTN Flow on GitHub</string>
+    <string name="share_link_copied">Link copied: %1$s</string>
+    <string name="share_system_message">FPTN Flow — reworked Material 3 Android client for FPTN: %1$s</string>
+
+    <!-- Logs, Permissions, Backup -->
+    <string name="logs_copied">Logs copied</string>
+    <string name="logs_clear_cd">Clear logs</string>
+    <string name="logs_empty">Log is empty</string>
+    <string name="perm_vpn_title">VPN profile</string>
+    <string name="perm_vpn_granted_msg">VPN permission granted</string>
+    <string name="perm_vpn_denied_msg">VPN permission denied</string>
+    <string name="perm_vpn_needed">Required to start the tunnel</string>
+    <string name="perm_notif_title">Notifications</string>
+    <string name="perm_notif_granted_msg">Notifications allowed</string>
+    <string name="perm_notif_denied_msg">Notifications denied</string>
+    <string name="perm_notif_needed">Shows connection status and speed</string>
+    <string name="perm_battery_title">Background activity</string>
+    <string name="perm_battery_unrestricted">Unrestricted</string>
+    <string name="perm_battery_needed">Disable battery optimization to prevent disconnects</string>
+    <string name="perm_root_title">Root access</string>
+    <string name="perm_root_active">Active — Root Stealth is available</string>
+    <string name="perm_root_default_hint">Request su permissions (Magisk, KernelSU, APatch)</string>
+    <string name="perm_root_verified_msg">Root access verified</string>
+    <string name="perm_status_granted">Granted</string>
+    <string name="perm_action_request">Request</string>
+    <string name="perm_action_allow">Allow</string>
+    <string name="perm_action_configured">Configured</string>
+    <string name="perm_action_open">Open</string>
+    <string name="perm_action_verify">Check</string>
+    <string name="backup_saved_msg">Backup saved</string>
+    <string name="backup_tokens_saved_msg">Tokens saved</string>
+    <string name="backup_file_empty_msg">Selected file is empty</string>
+    <string name="backup_write_error">Failed to write file: %1$s</string>
+    <string name="backup_read_error">Failed to read file: %1$s</string>
+
+    <!-- Appearance Preview Chips -->
+    <string name="appearance_preview_matrix">Matrix</string>
+    <string name="appearance_preview_pirate">Pirate (?)</string>
+    <string name="appearance_preview_disconnect">Off</string>
+    <string name="appearance_preview_error">Error</string>
+
+    <!-- Common & Notification Channel -->
+    <string name="back_cd">Back</string>
+    <string name="close_cd">Close</string>
+    <string name="copy_cd">Copy</string>
+    <string name="notification_channel_name">FPTN Flow Tunnel</string>
+    <string name="notification_channel_desc">Active VPN connection status and live traffic stats</string>
+    <string name="notification_alert_channel_name">Connection Alerts</string>
+    <string name="notification_alert_channel_desc">Alerts when the VPN server disconnects or fails, with quick reconnect</string>
+    <string name="vpn_notif_switching">Switching server…</string>
+    <string name="vpn_notif_reconnecting">Reconnecting FPTN Flow…</string>
+    <string name="vpn_notif_reconnecting_attempt">Reconnecting (%1$d/%2$d)…</string>
+    <string name="vpn_notif_connecting">Connecting to FPTN Flow…</string>
+    <string name="vpn_notif_auto_connecting">Auto-connecting FPTN Flow…</string>
+    <string name="vpn_notif_tunnel_active">FPTN Flow tunnel active</string>
+    <string name="vpn_notif_action_reconnect">Reconnect</string>
+    <string name="vpn_notif_action_disconnect">Disconnect</string>
+    <string name="vpn_notif_action_auto_server">Auto server</string>
+    <string name="vpn_notif_server_unreachable_title">Server unreachable • %1$s</string>
+    <string name="vpn_notif_server_unreachable_body">Connection dropped (%1$s). Auto-reconnecting — tap to reconnect now or switch server.</string>
+    <string name="vpn_notif_server_disconnected_title">Server disconnected • %1$s</string>
+    <string name="vpn_notif_vpn_disconnected_title">VPN disconnected • %1$s</string>
+</resources>

@@ -1,0 +1,31 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+    <!-- Crimson Heraldic Shield -->
+    <path
+        android:fillColor="#DC143C"
+        android:strokeColor="#F4C430"
+        android:strokeWidth="2.8"
+        android:pathData="M26,16 L102,16 L102,72 C102,94 84,110 64,118 C44,110 26,94 26,72 Z" />
+    <!-- Golden Crown -->
+    <path
+        android:fillColor="#FFD447"
+        android:strokeColor="#996B00"
+        android:strokeWidth="1.2"
+        android:pathData="M54,30 L52,21 L59,25 L64,18 L69,25 L76,21 L74,30 Z" />
+    <!-- Polish White Eagle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#D0D5DD"
+        android:strokeWidth="1"
+        android:pathData="M64,31
+            C70,31 73,35 72,41 L74,47 L95,33 L91,44 L97,46 L89,55 L95,59 L86,66 L91,71 L79,74 L74,70
+            L75,83 L83,89 L77,94 L71,88 L71,103 L64,109 L57,103 L57,88 L51,94 L45,89 L53,83 L54,70
+            L49,74 L37,71 L42,66 L33,59 L39,55 L31,46 L37,44 L33,33 L54,47 L56,41 C55,35 58,31 64,31 Z" />
+    <!-- Golden Wing Band, Beak & Talons -->
+    <path
+        android:fillColor="#FFD447"
+        android:pathData="M71,36 L78,38 L71,41 Z M40,51 L53,55 L52,58 L39,54 Z M88,51 L75,55 L76,58 L89,54 Z M45,89 L39,95 L44,96 L48,92 Z M83,89 L89,95 L84,96 L80,92 Z" />
+</vector>

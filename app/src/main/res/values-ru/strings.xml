@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="nav_share">Поделиться</string>
+
+    <!-- Connection States -->
+    <string name="status_disconnected">Отключено</string>
+    <string name="status_connecting">Подключение…</string>
+    <string name="status_switching_server">Смена сервера…</string>
+    <string name="status_reconnecting">Переподключение…</string>
+    <string name="status_connected">Защищено</string>
+    <string name="status_disconnecting">Отключение…</string>
+    <string name="status_error">Ошибка подключения</string>
+
+    <!-- Pull-to-Connect Track -->
+    <string name="swipe_to_connect">Потяните для подключения</string>
+    <string name="swipe_release_now">Отпустите для запуска</string>
+    <string name="swipe_release_to_disconnect">Отпустите для отключения</string>
+    <string name="swipe_connected_hint">Нажмите или потяните влево</string>
+    <string name="swipe_connecting_cancel">Подключение… Нажмите для отмены</string>
+    <string name="swipe_disconnecting">Остановка туннеля…</string>
+    <string name="swipe_switching_server">Переход на %1$s…</string>
+    <string name="swipe_reconnecting_progress">Переподключение (%1$d/%2$d)…</string>
+
+    <!-- Home Screen -->
+    <string name="home_no_tokens_title">Нет добавленных токенов</string>
+    <string name="home_no_tokens_subtitle">Добавьте официальный токен fptnb: или токен своего сервера FPTN.</string>
+    <string name="home_add_token_action">Добавить токен</string>
+    <string name="home_server_auto">Автовыбор (лучший пинг)</string>
+    <string name="home_server_selector_label">Сервер</string>
+    <string name="home_server_tap_to_switch">Нажмите для смены сервера</string>
+    <string name="home_select_server_placeholder">Выберите сервер</string>
+    <string name="home_select_server_cd">Выбрать сервер</string>
+    <string name="home_ping_refresh">Обновить пинг</string>
+    <string name="home_speed_download">Загрузка</string>
+    <string name="home_speed_upload">Отдача</string>
+    <string name="home_session_time">Сессия</string>
+    <string name="home_select_server_title">Выбор сервера</string>
+    <string name="home_censored_server_tag">Ценз. зона</string>
+    <string name="home_error_auto_heal">Авто-починка</string>
+    <string name="home_error_logs">Журнал</string>
+    <string name="home_error_dismiss">Скрыть</string>
+    <string name="home_perm_banner_title">Нужны разрешения</string>
+    <string name="home_perm_banner_desc">Для стабильной работы VPN включите: %1$s.</string>
+    <string name="home_perm_notifications">Уведомления</string>
+    <string name="home_perm_battery">Без ограничений АКБ</string>
+    <string name="home_perm_vpn">Профиль VPN</string>
+    <string name="home_perm_all">Все разрешения</string>
+    <string name="home_perm_reason_notifications">уведомления</string>
+    <string name="home_perm_reason_battery">работу в фоне без ограничений</string>
+    <string name="home_perm_reason_vpn">системный профиль VPN</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_vpn_active_banner">VPN активен. Изменения сохраняются и плавно применяются в туннеле.</string>
+    <string name="settings_section_connection">Подключение и обход</string>
+    <string name="settings_section_network">Сеть, DNS и маршрутизация</string>
+    <string name="settings_section_stability">Стабильность и оформление</string>
+    <string name="settings_section_system">Система и диагностика</string>
+    <string name="settings_tokens_title">Токены и серверы</string>
+    <string name="settings_tokens_subtitle">Профили и список серверов</string>
+    <string name="settings_presets_title">Пресеты сетей</string>
+    <string name="settings_presets_count">%1$d пресетов</string>
+    <string name="settings_presets_auto_suffix">Авто Wi-Fi/Мобильная</string>
+    <string name="settings_overrides_title">Ручные фиксации</string>
+    <string name="settings_overrides_active">Зафиксировано: %1$d • Сбросить на авто</string>
+    <string name="settings_overrides_auto">Все параметры управляются автоматически</string>
+    <string name="settings_bypass_title">Обход и SNI</string>
+    <string name="settings_dns_title">DNS и Smart DNS</string>
+    <string name="settings_dns_auto">Авто (сервер FPTN)</string>
+    <string name="settings_dns_adguard">AdGuard DoH (антиреклама)</string>
+    <string name="settings_tunneling_title">Маршрутизация и приложения</string>
+    <string name="settings_domains_count">%1$d доменов</string>
+    <string name="settings_root_title">Root Stealth (fptn0)</string>
+    <string name="settings_root_subtitle">Скрытый TUN без значка VPN</string>
+    <string name="settings_root_active_subtitle">Активен • Скрытый интерфейс fptn0</string>
+    <string name="settings_restore_root_title">Проверить Root-доступ</string>
+    <string name="settings_restore_root_subtitle">Нажмите после выдачи прав su в Magisk или KernelSU</string>
+    <string name="settings_additional_title">Стабильность и таймауты</string>
+    <string name="settings_watchdog_on_summary">Контроль %1$dс/%2$dс • Пинг %3$dс</string>
+    <string name="settings_watchdog_off_summary">Контроль выкл • Пинг %1$dс</string>
+    <string name="settings_appearance_title">Оформление и отклик</string>
+    <string name="settings_appearance_haptics_on">Виброотклик</string>
+    <string name="settings_appearance_haptics_off">Без вибро</string>
+    <string name="settings_appearance_wave_on">Волна AGSL</string>
+    <string name="settings_appearance_wave_off">Без волны</string>
+    <string name="settings_permissions_title">Разрешения</string>
+    <string name="settings_permissions_subtitle">VPN, уведомления, батарея и Root</string>
+    <string name="settings_logs_title">Журнал и диагностика</string>
+    <string name="settings_logs_subtitle">События туннеля, маршрутов и Root</string>
+    <string name="settings_backup_title">Резервная копия</string>
+    <string name="settings_backup_subtitle">Экспорт и импорт настроек или токенов</string>
+    <string name="settings_updates_title">Обновления (v%1$s)</string>
+    <string name="settings_updates_idle_subtitle">Проверить новые версии в GitHub Releases</string>
+    <string name="settings_updates_checking_subtitle">Проверяем GitHub Releases…</string>
+    <string name="settings_updates_up_to_date_subtitle">Установлена актуальная версия</string>
+    <string name="settings_updates_available_subtitle">Доступна версия v%1$s — нажмите для скачивания</string>
+    <string name="settings_updates_no_releases_subtitle">На GitHub пока нет опубликованных релизов</string>
+    <string name="settings_updates_error_subtitle">Не удалось проверить — нажмите для повтора</string>
+    <string name="settings_updates_dialog_title">Доступно обновление: v%1$s</string>
+    <string name="settings_updates_dialog_current">Установлена: v%1$s → Новая: v%2$s</string>
+    <string name="settings_updates_download_abi">Скачать APK (%1$s)</string>
+    <string name="settings_updates_open_releases">Открыть GitHub Releases</string>
+    <string name="settings_updates_banner_title">Вышла новая версия FPTN Flow v%1$s</string>
+    <string name="settings_updates_banner_subtitle">Нажмите, чтобы посмотреть изменения и скачать APK с GitHub</string>
+    <string name="settings_sponsors_title">Благодарности оригинальному FPTN</string>
+    <string name="settings_sponsors_count">Авторы протокола и %1$d участников</string>
+    <string name="settings_sponsors_refresh_cd">Обновить данные оригинального FPTN</string>
+    <string name="settings_sponsors_release">Релиз FPTN: %1$s</string>
+    <string name="settings_exit_title">Выход</string>
+    <string name="settings_exit_subtitle">Остановить туннель, очистить маршруты и выйти</string>
+    <string name="settings_exit_dialog_title">Выйти из FPTN Flow?</string>
+    <string name="settings_exit_dialog_message">Туннель остановится, интерфейс TUN закроется, а правила маршрутизации и Root будут очищены.</string>
+    <string name="settings_exit_confirm">Выйти</string>
+    <string name="settings_locked_cd">Заблокировано при активном VPN</string>
+
+    <!-- Token Manager -->
+    <string name="tokens_add_card_title">Новый профиль токена</string>
+    <string name="tokens_paste_button">Вставить</string>
+    <string name="tokens_save_button">Сохранить токен</string>
+    <string name="tokens_saving_button">Сохранение…</string>
+    <string name="tokens_cancel_button">Отмена</string>
+    <string name="tokens_name_label">Название профиля</string>
+    <string name="tokens_name_placeholder">Официальный FPTN или Мой VPS</string>
+    <string name="tokens_raw_label">Токен доступа (fptnb:, fptn:, fptn:// или JSON)</string>
+    <string name="tokens_raw_placeholder">Вставьте токен доступа…</string>
+    <string name="tokens_raw_support">Поддерживаются fptnb: (Brotli+Base64), fptn:, fptn://, многострочный Base64 и JSON.</string>
+    <string name="tokens_saved_profiles_header">Сохранённые профили (%1$d)</string>
+    <string name="tokens_empty_title">Профилей пока нет</string>
+    <string name="tokens_empty_subtitle">Добавьте один или несколько токенов — их серверы появятся с префиксом [Профиль].</string>
+    <string name="tokens_rename_dialog_title">Переименовать профиль</string>
+    <string name="tokens_save_short">Сохранить</string>
+    <string name="tokens_delete_dialog_title">Удалить профиль «%1$s»?</string>
+    <string name="tokens_delete_dialog_message">Все связанные серверы (%1$d) будут удалены из списка.</string>
+    <string name="tokens_delete_confirm">Удалить</string>
+    <string name="tokens_profile_meta">%1$s • %2$d серв. • %3$s</string>
+    <string name="tokens_delete_cd">Удалить профиль токена</string>
+    <string name="tokens_rename_cd">Переименовать профиль токена</string>
+
+    <!-- Share Screen -->
+    <string name="share_title">Поделиться FPTN Flow</string>
+    <string name="share_fork_badge">Переработанный клиент для FPTN</string>
+    <string name="share_fork_notice">FPTN Flow — личный переработанный Android-клиент в стиле Material 3 на базе открытого протокола и ядра FPTN. Ниже — ссылки на этот проект на GitHub и на оригинальный FPTN.</string>
+    <string name="share_subtitle">Переработанный Android-клиент в стиле Material 3 для открытого протокола FPTN</string>
+    <string name="share_fork_github_repo">FPTN Flow на GitHub</string>
+    <string name="share_fork_releases">Релизы и скачивание APK</string>
+    <string name="share_official_site">Сайт оригинального FPTN (fptn.org)</string>
+    <string name="share_github_repo">Оригинальный FPTN на GitHub</string>
+    <string name="share_telegram_bot">Получить токен в @fptn_bot</string>
+    <string name="share_copy_link">Копировать</string>
+    <string name="share_system_share">Поделиться</string>
+    <string name="share_qr_caption">Отсканируйте QR-код, чтобы открыть FPTN Flow на GitHub</string>
+    <string name="share_link_copied">Ссылка скопирована: %1$s</string>
+    <string name="share_system_message">FPTN Flow — переработанный Android-клиент для FPTN: %1$s</string>
+
+    <!-- Logs, Permissions, Backup -->
+    <string name="logs_copied">Журнал скопирован</string>
+    <string name="logs_clear_cd">Очистить журнал</string>
+    <string name="logs_empty">Журнал пуст</string>
+    <string name="perm_vpn_title">Профиль VPN</string>
+    <string name="perm_vpn_granted_msg">Разрешение VPN выдано</string>
+    <string name="perm_vpn_denied_msg">Разрешение VPN отклонено</string>
+    <string name="perm_vpn_needed">Требуется для запуска туннеля</string>
+    <string name="perm_notif_title">Уведомления</string>
+    <string name="perm_notif_granted_msg">Уведомления разрешены</string>
+    <string name="perm_notif_denied_msg">Уведомления запрещены</string>
+    <string name="perm_notif_needed">Статус подключения и скорость в шторке</string>
+    <string name="perm_battery_title">Работа в фоне</string>
+    <string name="perm_battery_unrestricted">Без ограничений</string>
+    <string name="perm_battery_needed">Отключите оптимизацию батареи для стабильного VPN</string>
+    <string name="perm_root_title">Root-доступ</string>
+    <string name="perm_root_active">Активен — раздел Root Stealth доступен</string>
+    <string name="perm_root_default_hint">Запросите права su (Magisk, KernelSU, APatch)</string>
+    <string name="perm_root_verified_msg">Root-доступ проверен</string>
+    <string name="perm_status_granted">Выдано</string>
+    <string name="perm_action_request">Запросить</string>
+    <string name="perm_action_allow">Разрешить</string>
+    <string name="perm_action_configured">Настроено</string>
+    <string name="perm_action_open">Открыть</string>
+    <string name="perm_action_verify">Проверить</string>
+    <string name="backup_saved_msg">Резервная копия сохранена</string>
+    <string name="backup_tokens_saved_msg">Токены сохранены</string>
+    <string name="backup_file_empty_msg">Выбранный файл пуст</string>
+    <string name="backup_write_error">Ошибка записи файла: %1$s</string>
+    <string name="backup_read_error">Ошибка чтения файла: %1$s</string>
+
+    <!-- Appearance Preview Chips -->
+    <string name="appearance_preview_matrix">Сетка</string>
+    <string name="appearance_preview_pirate">Пират (?)</string>
+    <string name="appearance_preview_disconnect">Откл.</string>
+    <string name="appearance_preview_error">Ошибка</string>
+
+    <!-- Common & Notification Channel -->
+    <string name="back_cd">Назад</string>
+    <string name="close_cd">Закрыть</string>
+    <string name="copy_cd">Копировать</string>
+    <string name="notification_channel_name">FPTN Flow Туннель</string>
+    <string name="notification_channel_desc">Статус активного VPN и статистика трафика</string>
+    <string name="notification_alert_channel_name">Уведомления о сбоях</string>
+    <string name="notification_alert_channel_desc">Оповещения об обрыве соединения с сервером и кнопка переподключения</string>
+    <string name="vpn_notif_switching">Переключение сервера…</string>
+    <string name="vpn_notif_reconnecting">Переподключение FPTN Flow…</string>
+    <string name="vpn_notif_reconnecting_attempt">Переподключение (%1$d/%2$d)…</string>
+    <string name="vpn_notif_connecting">Подключение к FPTN Flow…</string>
+    <string name="vpn_notif_auto_connecting">Автоподключение FPTN Flow…</string>
+    <string name="vpn_notif_tunnel_active">Туннель FPTN Flow активен</string>
+    <string name="vpn_notif_action_reconnect">Переподключить</string>
+    <string name="vpn_notif_action_disconnect">Отключить</string>
+    <string name="vpn_notif_action_auto_server">Другой сервер</string>
+    <string name="vpn_notif_server_unreachable_title">Сервер не отвечает • %1$s</string>
+    <string name="vpn_notif_server_unreachable_body">Связь с сервером прервалась (%1$s). Идёт автопереподключение — можно переподключить вручную или сменить узел.</string>
+    <string name="vpn_notif_server_disconnected_title">Сервер отключился • %1$s</string>
+    <string name="vpn_notif_vpn_disconnected_title">VPN отключён • %1$s</string>
+</resources>

@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+    <!-- Blue Heraldic Shield with Golden Border -->
+    <path
+        android:fillColor="#0057B7"
+        android:strokeColor="#FFD700"
+        android:strokeWidth="3.2"
+        android:pathData="M28,16 L100,16 L100,72 C100,94 83,109 64,117 C45,109 28,94 28,72 Z" />
+    <!-- Authentic Golden Tryzub (Trident) -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M64,25
+            L68,36 L67,65 L75,65 C79,65 81,62 81,57 L81,34 L88,28 L88,73
+            C88,83 80,91 70,92 L70,96 L64,104 L58,96 L58,92
+            C48,91 40,83 40,73 L40,28 L47,34 L47,57 C47,62 49,65 53,65 L61,65 L60,36 Z
+            M48,72 C48,78 52,83 58,84 L58,72 Z
+            M70,72 L70,84 C76,83 80,78 80,72 Z" />
+</vector>

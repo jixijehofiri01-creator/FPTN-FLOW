@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+    <!-- German Gold Escutcheon Shield -->
+    <path
+        android:fillColor="#FFCE00"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.8"
+        android:pathData="M26,16 L102,16 L102,72 C102,94 84,110 64,118 C44,110 26,94 26,72 Z" />
+    <!-- Bundesadler Black Spread-Winged Eagle -->
+    <path
+        android:fillColor="#141414"
+        android:pathData="M64,26
+            C69,26 73,30 72,36 C71,40 69,43 72,46
+            L95,30 L91,40 L97,40 L90,49 L96,51 L88,58 L94,61 L85,67 L90,71 L79,74 L74,70
+            L74,82 L82,88 L76,92 L71,86 L72,102 L68,97 L64,107 L60,97 L56,102
+            L57,86 L52,92 L46,88 L54,82 L54,70
+            L49,74 L38,71 L43,67 L34,61 L40,58 L32,51 L38,49 L31,40 L37,40 L33,30 L56,46
+            C59,43 57,40 56,36 C55,30 59,26 64,26 Z" />
+    <!-- Red Beak & Talons (Official Bundeswappen) -->
+    <path
+        android:fillColor="#DD0000"
+        android:pathData="M56,33 L49,35 L55,38 Z M46,88 L40,94 L45,95 L49,91 Z M82,88 L88,94 L83,95 L79,91 Z" />
+    <!-- White Eye -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M61,32 m-1.8,0 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0" />
+</vector>

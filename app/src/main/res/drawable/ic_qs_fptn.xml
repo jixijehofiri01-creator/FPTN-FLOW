@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Minimalist geometric shield outline with dual chevron core (monochrome for QS Tile, Status Bar & Material You) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,2.1L4.5,5.1V11.3C4.5,16.1 7.7,20.4 12,21.9C16.3,20.4 19.5,16.1 19.5,11.3V5.1L12,2.1ZM17.6,11.3C17.6,15.1 15.2,18.5 12,19.9C8.8,18.5 6.4,15.1 6.4,11.3V6.4L12,4.15L17.6,6.4V11.3Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,7.5L8.2,10.7L9.35,12.05L12,9.8L14.65,12.05L15.8,10.7L12,7.5Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,11.3L8.2,14.5L9.35,15.85L12,13.6L14.65,15.85L15.8,14.5L12,11.3Z" />
+</vector>
